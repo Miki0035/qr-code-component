@@ -1,0 +1,75 @@
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--light-gray);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 0.8rem;
+}
+.qr-code-container {
+    width: 250px;
+}
+.qr-code-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+} 
+.text-container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+.text-container p {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    margin: 10px 0;
+}
+
+@media (min-width: 350px ) {
+    main {
+        width: 300px;
+    }
+    .qr-code-container {
+        width: 280px;
+    }
+}
